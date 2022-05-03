@@ -57,7 +57,8 @@ import com.generation.blogpessoal.repository.PostagemRepository;
 		@DeleteMapping("/{id}")
 		public void deletePostagem(@PathVariable Long id){
 		postagemRepository.deleteById(id);	
-			
+		
+		//Deleta a postagem
 		}
 		
 }
