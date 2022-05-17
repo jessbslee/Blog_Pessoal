@@ -14,6 +14,15 @@ public class UsuarioLogin {
 
 	private String token;
 
+	public UsuarioLogin(Long id, String nome, String usuario, String senha, String foto, String token) {
+		this.id = id;
+		this.nome = nome;
+		this.usuario = usuario;
+		this.senha = senha;
+		this.foto = foto;
+		this.token = token;
+	}
+
 	public Long getId() {
 		return id;
 	}
@@ -60,6 +69,6 @@ public class UsuarioLogin {
 
 	public void setFoto(String foto) {
 		this.foto = foto;
-	}	
-	
+	}
+
 }
