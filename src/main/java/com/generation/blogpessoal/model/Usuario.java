@@ -40,16 +40,30 @@ public class Usuario {
 
 	private String foto;
 
+<<<<<<< HEAD
+=======
+	private String token;
+
+	public String getToken() {
+		return token;
+	}
+
+	public void setToken(String token) {
+		this.token = token;
+	}
+
+>>>>>>> 0556e7ba01ca5a8a83b0071cff6bca61326a19d1
 	@OneToMany(mappedBy = "usuario", cascade = CascadeType.REMOVE)
 	@JsonIgnoreProperties("usuario")
 	private List<Postagem> postagem;
 
-	public Usuario(Long id, String nome, String usuario, String senha, String foto) {
+	public Usuario(Long id, String nome, String usuario, String senha, String foto, String token) {
 		this.id = id;
 		this.nome = nome;
 		this.usuario = usuario;
 		this.senha = senha;
 		this.foto = foto;
+		this.token = token;
 	}
 
 	public Usuario() {
